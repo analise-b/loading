@@ -28,7 +28,7 @@ header {
     flex-direction: column;
 }
 
-#about{
+#about {
     width: 40%;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ header {
 }
 
 #down {
-    color:#E0D8D8;
+    color: #E0D8D8;
 }
 
 #hamburger {
@@ -176,8 +176,8 @@ header {
 #fruitSlideBar,
 #caesarSlideBar {
     position: absolute;
-    height: 80%;
-    width: 80px;
+    height: 85%;
+    width: 85px;
     background-image: url("images/slider.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -185,4 +185,122 @@ header {
     cursor: ew-resize;
     z-index: 3;
     top: 50px;
+}
+
+.relativeWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hotspot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#hotspotWoman {
+    top: 40%;
+    left: 40%;
+}
+
+#hotspotCat {
+    top: 40%;
+    left: 60%;
+}
+
+#hotspotNapoleon {
+    top: 20%;
+    left: 50%;
+}
+
+#hotspotMedusa {
+    top: 45%;
+    left: 60%;
+}
+
+#hotspotFruit {
+    top: 40%;
+    left: 55%;
+}
+
+#hotspotCaesar {
+    top: 50%;
+    left: 49%;
+}
+
+.womanPopup,
+.catPopup,
+.napoleonPopup,
+.medusaPopup,
+.fruitPopup,
+.caesarPopup {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    border: 3px solid #56708B;
+}
+
+.womanPopup {
+    background-image: url("images/womanPopup.jpg");
+}
+
+.catPopup {
+    background-image: url("images/catPopup.png");
+}
+
+.napoleonPopup {
+    background-image: url("images/napoleonPopup.png");
+}
+
+.medusaPopup {
+    background-image: url("images/medusaPopup.jpg");
+}
+
+.fruitPopup {
+    background-image: url("images/fruitPopup.jpg");
+}
+
+.caesarPopup {
+    background-image: url("images/caesarPopup.webp");
+}
+
+.hotspot:hover .womanPopup {
+    display: block;
+}
+
+.hotspot:hover .catPopup {
+    display: block;
+}
+
+
+.hotspot:hover .napoleonPopup {
+    display: block;
+}
+
+.hotspot:hover .medusaPopup {
+    display: block;
+}
+
+.hotspot:hover .fruitPopup {
+    display: block;
+}
+
+.hotspot:hover .caesarPopup {
+    display: block;
 }

@@ -16,9 +16,11 @@
 <body>
     <header>
         <h1>Gallery</h1>
-        <h2 id="about">This gallery explores the connections between classic paintings and modern internet memes as a playful
-            expression of art. Each pairing highlights surprising similarities between the old and the new. <span id="down">Scroll down
-            to explore!</span>
+        <h2 id="about">This gallery explores the connections between classic paintings and modern internet memes as a
+            playful
+            expression of art. Each pairing highlights surprising similarities between the old and the new. To view the
+            original internet meme, hover over one of the added elements in the painting.<span id="down"> Scroll down
+                to explore!</span>
         </h2>
 
         <div id="hamburger">&#9776;</div> <!-- This is the hamburger icon -->
@@ -41,36 +43,65 @@
     </header>
     <div class="container" id="supperContainer">
         <div class="wrapper" id="wrapper">
-            <div id="original" class="imgLayer"></div>
-            <div id="overlay" class="imgLayer"></div>
+            <div class="relativeWrapper">
+                <div id="original" class="imgLayer"></div>
+                <div id="overlay" class="imgLayer">
+                </div>
+                <div class="hotspot" id="hotspotWoman">
+                    <div class="womanPopup"> </div>
+                </div>
+                <div class="hotspot" id="hotspotCat">
+                    <div class="catPopup"> </div>
+                </div>
+            </div>
             <div id="sliderBar"></div>
         </div>
     </div>
     <div class="container" id="napoleonContainer">
-        <div class="wrapper" id="napoleonWrapper">
-            <div id="napoleon" class="imgLayer"></div>
-            <div id="napoleonThug" class="imgLayer"></div>
+        <div class="relativeWrapper">
+            <div class="wrapper" id="napoleonWrapper">
+                <div id="napoleon" class="imgLayer"></div>
+                <div id="napoleonThug" class="imgLayer"></div>
+                <div class="hotspot" id="hotspotNapoleon">
+                    <div class="napoleonPopup"> </div>
+                </div>
+            </div>
             <div id="napoleonSlideBar"></div>
         </div>
     </div>
     <div class="container" id="medusaContainer">
-        <div class="wrapper" id="mdeusaWrapper">
-            <div id="medusa" class="imgLayer"></div>
-            <div id="medusaOverlay" class="imgLayer"></div>
+        <div class="relativeWrapper">
+            <div class="wrapper" id="medusaWrapper">
+                <div id="medusa" class="imgLayer"></div>
+                <div id="medusaOverlay" class="imgLayer"></div>
+                <div class="hotspot" id="hotspotMedusa">
+                    <div class="medusaPopup"> </div>
+                </div>
+            </div>
             <div id="medusaSlideBar"></div>
         </div>
     </div>
     <div class="container" id="fruitContainer">
-        <div class="wrapper" id="fruitWrapper">
-            <div id="fruit" class="imgLayer"></div>
-            <div id="fruitOverlay" class="imgLayer"></div>
+        <div class="relativeWrapper">
+            <div class="wrapper" id="fruitWrapper">
+                <div id="fruit" class="imgLayer"></div>
+                <div id="fruitOverlay" class="imgLayer"></div>
+                <div class="hotspot" id="hotspotFruit">
+                    <div class="fruitPopup"> </div>
+                </div>
+            </div>
             <div id="fruitSlideBar"></div>
         </div>
     </div>
     <div class="container" id="caesarContainer">
-        <div class="wrapper" id="caesarWrapper">
-            <div id="caesar" class="imgLayer"></div>
-            <div id="caesarOverlay" class="imgLayer"></div>
+        <div class="relativeWrapper">
+            <div class="wrapper" id="caesarWrapper">
+                <div id="caesar" class="imgLayer"></div>
+                <div id="caesarOverlay" class="imgLayer"></div>
+                <div class="hotspot" id="hotspotCaesar">
+                    <div class="caesarPopup"> </div>
+                </div>
+            </div>
             <div id="caesarSlideBar"></div>
         </div>
     </div>
