@@ -28,6 +28,9 @@ hamburger.addEventListener('click', () => {
 
 let isDragging = false;
 let isDragging2 = false;
+let isDragging3 = false;
+let isDragging4 = false;
+let isDragging5 = false;
 
 sliderBar.addEventListener("mousedown", () => {
     isDragging = true;
